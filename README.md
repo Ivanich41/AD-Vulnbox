@@ -18,7 +18,7 @@ A fully configured image can be found [here](https://drive.google.com/file/d/1N4
 
 ## Advanced installation 
 ### Base image 
-I am using Debian 11 for build base. I prefer pure Virtualbox image from [Linux VM Images website](https://www.linuxvmimages.com/images/debian-11/)(There are also provided VMware images). Alternatively you can use original debian [netinstaller](https://www.debian.org/download) if you want a desktop enviroment for example.
+I am using Debian 11 as a build base. I prefer pure Virtualbox image from [Linux VM Images website](https://www.linuxvmimages.com/images/debian-11/)(There are also provided VMware images). Alternatively you can use original debian [netinstaller](https://www.debian.org/download) if you want a desktop enviroment for example.
 
 Also, my image assumes several snapshots so that the user can skip some installation steps
 
@@ -36,7 +36,7 @@ To turn interface UP type in terminal this command
 ```
 ip link set enp0s8 up
 ```
-After that, to assign an IP using a DHCP server, enter this command
+After that, to assign an IP using a DHCP client, enter this command
 ```
 dhclient enp0s8
 ```
@@ -49,11 +49,11 @@ wget -qO https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/scripts/ini
 ```
 ### Basic Software 
 To update package bases and install software suit type this commands as root. Add or remove any packages as you see fit
-```
+```bash
 apt update 
 apt install -y neovim tmux tldr curl htop git openvpn
 ```
-The above actions are also available in the script [install_stuff.sh](./scripts/init_network.sh)
+The above actions are also available in the script [install_stuff.sh](./scripts/install_stuff.sh)
 ```bash
 wget -qO https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/scripts/install_stuff.sh | bash
 ```
