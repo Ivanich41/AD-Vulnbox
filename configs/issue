@@ -1,0 +1,12 @@
+Preconfigured Vulnbox designed for instant deploy in Attack Defence CTF ivent. More info and sources:
+    https://github.com/Ivanich41/AD-Vulnbox
+
+
+
+                           Host Name: \n
+                           OS: \v
+                           Time: \d \t
+                           System IP address NAT: \4{enp0s3}
+                           System IP address Host-Only: \4{enp0s8}
+                           User Name: debian
+                           Password:  debian (sudo su -)
