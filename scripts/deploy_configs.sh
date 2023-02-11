@@ -12,5 +12,7 @@ wget https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/configs/.vimrc 
 chown debian:debian $userpath/.vimrc
 # Tmux config 
 wget https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/configs/.tmux.conf -P $rootpath
+git clone https://github.com/tmux-plugins/tpm $rootpath/.tmux/plugins/tpm
 wget https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/configs/.tmux.conf -P $userpath
+git clone https://github.com/tmux-plugins/tpm $userpath/.tmux/plugins/tpm
 chown debian:debian $userpath/.tmux.conf 

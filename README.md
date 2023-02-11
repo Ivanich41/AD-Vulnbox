@@ -86,6 +86,7 @@ Close this file and open .vimrc again
 Try input *:PlugInstall*. Plugins should be installed. Type :source % for last time to apply theme 
 In the end it should look like this 
 ![nvim](./images/nvim.png)
+
 Next add following line in the end of  **~/.bashrc**:
 ```
 alias tmux="TERM=screen-256color-bce tmux"
@@ -94,8 +95,10 @@ and then enter
 ```
 tmux source ~/.tmux.conf 
 ```
-This line fixing neovim colors in tmux. 
+This line fixing neovim colors in tmux.
 
+After adding alias run tmux and hit Host-key(Ctrl+A in my config) and type captital I letter. You should see folowwing message 
+ ![tpm](./images/tpm.png)
 ### Docker 
 To install docker engine run
 ```
@@ -115,3 +118,6 @@ S4D Farm [here](https://github.com/C4T-BuT-S4D/S4DFarm.git)
 git clone https://github.com/C4T-BuT-S4D/S4DFarm.git
 ```
 To configure S4D Farm edit **/server/app/config.py** file. 
+
+# TODO 
+- Specify installed plugins for neovim and tmux
