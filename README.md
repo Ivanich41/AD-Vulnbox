@@ -115,7 +115,8 @@ ls -la ~ | grep .tmux
 
 After adding alias run tmux and hit Host-key(**Ctrl+A** in my config) and type captital I letter. You should see folowwing message 
  ![tpm](./images/tpm.png)
-**Presented Neovim Plugins.**
+ 
+**Presented Tmux Plugins.**
 ```t
 @plugin 'tmux-plugins/tpm' - Tmux plugin manager
 @plugin 'tmux-plugins/tmux-resurrect' - Restore tmux session after reboot
