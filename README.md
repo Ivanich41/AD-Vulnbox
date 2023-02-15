@@ -87,6 +87,16 @@ Try input *:PlugInstall*. Plugins should be installed. Type :source % for last t
 In the end it should look like this 
 ![nvim](./images/nvim.png)
 
+**Presented Neovim Plugins.**
+```lua
+Plug 'vim-airline/vim-airline-themes' - Themes for Nepvim status bar.
+Plug 'bling/vim-airline' - Powerful status bar.
+Plug 'tpope/vim-surround' - Faster text surrounding 
+Plug 'scrooloose/nerdtree' - File explorer (Ctrl+T to toggle)
+Plug 'bling/vim-bufferline' - Display opened files in status line
+Plug 'mhartington/oceanic-next' - Color scheme. Selected by default
+```
+
 Next add following line in the end of  **~/.bashrc**:
 ```
 alias tmux="TERM=screen-256color-bce tmux"
@@ -97,8 +107,24 @@ tmux source ~/.tmux.conf
 ```
 This line fixing neovim colors in tmux.
 
-After adding alias run tmux and hit Host-key(Ctrl+A in my config) and type captital I letter. You should see folowwing message 
+Just in case check  existence of **.tmux** dir in the user's home folder
+```
+ls -la ~ | grep .tmux
+```
+![ls](./images/ls.png)
+
+After adding alias run tmux and hit Host-key(**Ctrl+A** in my config) and type captital I letter. You should see folowwing message 
  ![tpm](./images/tpm.png)
+**Presented Neovim Plugins.**
+```t
+@plugin 'tmux-plugins/tpm' - Tmux plugin manager
+@plugin 'tmux-plugins/tmux-resurrect' - Restore tmux session after reboot
+@plugin 'tmux-plugins/tmux-yank' - Easy vim-like copy with xclip support
+@plugin 'tmux-plugins/tmux-prefix-highlight' - Highligt prefix on status bar then pressed
+@plugin 'xamut/tmux-network-bandwidth' - Display network speed on status bar
+@plugin 'tmux-plugins/tmux-online-status' - Display online status on status bar
+```
+
 ### Docker 
 To install docker engine run
 ```
@@ -120,4 +146,4 @@ git clone https://github.com/C4T-BuT-S4D/S4DFarm.git
 To configure S4D Farm edit **/server/app/config.py** file. 
 
 # TODO 
-- Specify installed plugins for neovim and tmux
+~~- Specify installed plugins for neovim and tmux~~
