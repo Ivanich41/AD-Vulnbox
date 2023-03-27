@@ -148,3 +148,10 @@ To configure S4D Farm edit **/server/app/config.py** file.
 
 # TODO 
 ~~- Specify installed plugins for neovim and tmux~~
+- Add software:
+    1. Wireguard+resolvconf
+    2. tcpdump, tshark, pktstat
+- Vim Pligin "vim-commentary" 
+- MobaXterm References
+- "Docker context" references
+
