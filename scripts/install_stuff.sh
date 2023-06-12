@@ -6,4 +6,4 @@ then
     exit 0
 fi 
 apt update 
-apt install -y neovim tmux tldr curl htop git openvpn
+apt install -y neovim tmux tldr curl htop git openvpn wireguard resolvconf tcpdump tshark pktstat

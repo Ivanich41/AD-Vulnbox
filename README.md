@@ -53,7 +53,7 @@ To update package bases and install software suit type this commands as root. Ad
 apt update 
 apt install -y neovim tmux tldr curl htop git openvpn
 ```
-The above actions are also available in the script [install_stuff.sh](./scripts/install_stuff.sh)
+The above actions are also available in the script [install_stuff.sh](./scripts/install_stuff.sh). Also installs previous init-network script.
 ```bash
 wget -qO https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/scripts/install_stuff.sh | bash
 ```
@@ -146,12 +146,30 @@ git clone https://github.com/C4T-BuT-S4D/S4DFarm.git
 ```
 To configure S4D Farm edit **/server/app/config.py** file. 
 
-# TODO 
-~~- Specify installed plugins for neovim and tmux~~
-- Add software:
-    1. Wireguard+resolvconf
-    2. tcpdump, tshark, pktstat
-- Vim Pligin "vim-commentary" 
-- MobaXterm References
-- "Docker context" references
+# Host to use it
+In addition to a simple connection via ssh, I can offer 3 options for interaction.
+## GUI SFTP Client 
+A good option if you use a cli text editor and a regular terminal/tmux. This will allow you to quickly move between directories in the graphics window without entering the complicated sftp/scp command. Thanks to this method, all team members will be able to quickly upload files.
 
+For windows I reconmend [WinScp](https://winscp.net/eng/download.php), [Cyberduck](https://cyberduck.io) for Mac and [FileZilla](https://filezilla.ru) for Linux.
+
+The main idea of this method is fast access to a remote file system.
+
+![winscp](./images/winscp.png)
+
+
+## Visual Stuido Code
+VS Code fans can install the [ssh plugin](https://code.visualstudio.com/docs/remote/ssh) and edit files remotely.
+
+![ssh](./images/ssh.png)
+
+## [MobaXTerm](https://mobaxterm.mobatek.net) (Windows Only)
+
+Mobaxterm is an advanced administration tool with supportted protocols.
+It combines the advantages of the previous methods:
+- SSH browser with drag and drop support
+- Built in remote text editor
+- Remote monitoring window 
+
+Unfortunately, Moba only supports Windows. I tried to run it through emulation on a Mac, but it looked pretty bad.
+![moba](./images/moba.png)

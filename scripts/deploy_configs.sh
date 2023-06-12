@@ -16,3 +16,7 @@ git clone https://github.com/tmux-plugins/tpm $rootpath/.tmux/plugins/tpm
 wget https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/configs/.tmux.conf -P $userpath
 git clone https://github.com/tmux-plugins/tpm $userpath/.tmux/plugins/tpm
 chown debian:debian $userpath/.tmux.conf 
+
+# Install init-network in Path
+curl https://raw.githubusercontent.com/Ivanich41/AD-Vulnbox/main/scripts/init_network.sh > /usr/local/bin/init-network
+chmod ugo+x /usr/local/bin/init-network

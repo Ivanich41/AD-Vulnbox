@@ -25,6 +25,7 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-bufferline'
 Plug 'mhartington/oceanic-next'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
