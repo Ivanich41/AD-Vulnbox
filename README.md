@@ -1,7 +1,7 @@
 # AD-Vulnbox
 Pre-configured virtual machine aka Vulnbox aimed to Attack Defence CTF types.
 ## TL; DR
-A fully configured image can be found [here](https://drive.google.com/file/d/1WaT_Nng-M1ddQPBfQCemrrv9Zg72byJU/view?usp=share_link). This Repo contains scripts and configs that had been used during machine setup. You can customize them to improve your usage experience.
+A fully configured image can be found [here](https://github.com/Ivanich41/AD-Vulnbox/releases/tag/v2). This Repo contains scripts and configs that had been used during machine setup. You can customize them to improve your usage experience.
 ### Features 
 - Based on Debian 11
 - Two network interfaces: NAT and Host-Only
