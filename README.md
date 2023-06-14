@@ -165,7 +165,7 @@ VS Code fans can install the [ssh plugin](https://code.visualstudio.com/docs/rem
 
 ## [MobaXTerm](https://mobaxterm.mobatek.net) (Windows Only)
 
-Mobaxterm is an advanced administration tool with supportted protocols.
+Mobaxterm is an advanced administration tool with many connection protocols support
 It combines the advantages of the previous methods:
 - SSH browser with drag and drop support
 - Built in remote text editor
