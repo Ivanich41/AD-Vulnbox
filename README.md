@@ -146,7 +146,7 @@ git clone https://github.com/C4T-BuT-S4D/S4DFarm.git
 ```
 To configure S4D Farm edit **/server/app/config.py** file. 
 
-# Host to use it
+# How to use it
 In addition to a simple connection via ssh, I can offer 3 options for interaction.
 ## GUI SFTP Client 
 A good option if you use a cli text editor and a regular terminal/tmux. This will allow you to quickly move between directories in the graphics window without entering the complicated sftp/scp command. Thanks to this method, all team members will be able to quickly upload files.
