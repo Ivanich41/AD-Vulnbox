@@ -1,5 +1,12 @@
 # AD-Vulnbox
 Pre-configured virtual machine aka Vulnbox aimed to Attack Defence CTF types.
+# Deprecated 
+I've found ova importing method is too slow and manual downloading distracts the user. 
+I also decided to divide the future development into 2 parts
+- [Vagrant-based virtual machine](https://github.com/Ivanich41/AD-vulnbox-vagrant)
+- [Terraform-based cloud machine](https://github.com/Ivanich41/AD-vulnbox-cloud)
+
+Both use same Ansible roles for setup
 ## TL; DR
 A fully configured image can be found [here](https://github.com/Ivanich41/AD-Vulnbox/releases/tag/v2). This Repo contains scripts and configs that had been used during machine setup. You can customize them to improve your usage experience.
 ### Features 
